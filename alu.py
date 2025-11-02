@@ -6,6 +6,8 @@ class Alu:
 
     def carry_in(self) -> None:
         self._result += 1
+        self._carry_out = self._result & (2**self._bits)
+        self._result &= 2**self._bits - 1
 
     def update_flags(self, flags: dict[str, int]) -> None:
         flags["positive"] = self._result > 0

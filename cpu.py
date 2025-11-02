@@ -4,6 +4,7 @@ import ArithmeticLogicUnit
 
 class CentralProcessingUnit:
     data_length = 16
+    instruction_length = 16
 
     control_lines = {
         "immediate"   : 0,
@@ -22,6 +23,6 @@ class CentralProcessingUnit:
         "read flags"  : 0
     }
 
-    control_unit = ControlUnit()
+    control_unit = ControlUnit(i_bits=instruction_length)
     registers = RegisterFile(n_gprs=8, zero_reg=True, bits=data_length)
     alu = ArithmeticLogicUnit(bits=data_length)
