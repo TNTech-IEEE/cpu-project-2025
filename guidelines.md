@@ -20,6 +20,7 @@ This project is run by the Tennessee Tech University IEEE Student Branch. We pri
 
 1. **Use Standard Naming Conventions**  
    Follow consistent naming conventions for files, modules, signals, and variables. This improves readability and maintainability of the code.
+    1. Files will follow a format of all lowercase letters with words being separated by underscores, e.g. foo_bar.txt, sample_file.cpp, etc.
 
 2. **Document Your Designs**
     Provide clear documentation for your designs, including block diagrams, truth tables, and timing diagrams where applicable. This will help others understand the functionality and purpose of your designs. Most importantly, provide clear descriptions of what the design does and what all inputs and outputs represent.
